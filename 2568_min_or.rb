@@ -4,11 +4,11 @@
 def min_impossible_or(nums)
   a = Hash.new
   for i in 0..nums.length
-      a[nums[i]] = 1
+    a[nums[i]] = 1
   end
   i = 1
   while(!a[i].nil?)
-      i <<= 1
+    i <<= 1
   end
   i
 end

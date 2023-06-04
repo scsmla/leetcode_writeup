@@ -17,16 +17,16 @@ def kth_largest_level_sum(root, k)
   queue = [root]
 
   while(!queue.empty?)
-      l = queue.length
-      curr = 0
-      for i in 0..l-1
-          top = queue.shift
-          next if top.nil?
-          curr += top.val
-          queue.push(top.right) if top.right
-          queue.push(top.left) if top.left
-      end
-      sums.push(curr)
+    l = queue.length
+    curr = 0
+    for i in 0..l-1
+      top = queue.shift
+      next if top.nil?
+      curr += top.val
+      queue.push(top.right) if top.right
+      queue.push(top.left) if top.left
+    end
+    sums.push(curr)
   end
 
   sums.length < k ? -1 : sums.sort.reverse[k-1]
