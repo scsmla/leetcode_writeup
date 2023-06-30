@@ -18,6 +18,7 @@ def sort_jumbled(mapping, nums)
 
   sorted = a.sort_by {|key, _value| key}
   res = []
+  
   sorted.each do |st|
     res.concat(st[1])
   end
