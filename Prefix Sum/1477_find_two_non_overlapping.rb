@@ -24,7 +24,7 @@ def min_sum_of_lengths(arr, target)
     end
 
     if !a[curr+target].nil? && l != 10**9
-      res = [res, l + a[curr+target] - i].min
+      res = [res, l + a[curr+target] - i].min 
     end
   end
 
