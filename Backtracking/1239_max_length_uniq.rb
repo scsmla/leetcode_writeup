@@ -16,10 +16,6 @@ def backtrack(arr, start, path)
 
   path += [arr[start]]
   @max = [@max, path.join('').length].max
-  # puts @max
-  # puts path
-  # puts start
-  # puts '----'
   backtrack(arr, start+1, path)
   path -= [arr[start]]
   backtrack(arr, start+1, path)
