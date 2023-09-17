@@ -2,6 +2,7 @@
 # @param {Integer} k
 # @return {Boolean}
 # Link: https://leetcode.com/problems/continuous-subarray-sum/
+
 def check_subarray_sum(nums, k)
   a = Hash.new
   n = nums.length
