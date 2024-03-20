@@ -6,16 +6,8 @@ def search(nums, target)
   l = 0
   r = n-1
 
-  # if n == 1
-  #   return nums[0] == target ? 0 : -1
-  # end
-
   while(l < r)
     mid = (l+r)/2
-      # puts l
-      # puts r
-      # puts mid
-      # puts '-----'
 
     if nums[mid] >= nums[l] && nums[mid] <= nums[r]
       pivot = l
@@ -30,9 +22,6 @@ def search(nums, target)
   pivot = l
   l = 0
   r = n-1
-
-  # puts pivot
-  # puts '----------START----------'
 
   while(l < r)
     mid = (l+r)/2
